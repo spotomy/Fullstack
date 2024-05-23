@@ -7,14 +7,36 @@ const Header = (p) => {
       </div>
    )
 }
+
+const Part1 = (p) => {
+   return (
+      <>
+         <li>Fundamentals of React: {p.num}</li>
+      </>
+   )
+}
+const Part2 = (p) => {
+   return (
+      <>
+         <li>Using props to pass data: {p.num}</li>
+      </>
+   )
+}
+const Part3 = (p) => {
+   return (
+      <>
+         <li>Component state: {p.num}</li>
+      </>
+   )
+}
 const Content = (p) => {
    return (
       <div>
          <h2>Number of exercises:</h2>
          <ul>
-            <li>Fundamentals of React: {p.e1}</li>
-            <li>Usings props to pass data: {p.e2}</li>
-            <li>Component state: {p.e3}</li>
+            <Part1 num={p.e1}/>
+            <Part2 num={p.e2}/>
+            <Part3 num={p.e3}/>
          </ul>
       </div>
    )
